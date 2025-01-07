@@ -1,2 +1,2 @@
 # Expense-Tracer
-Follow your expenses with this CLI toll! Made with Bun and TypeScript
+Expense Tracer is a simple expense tracker application to manage your finances. For project details Read this [Expense Tracer by Roadmap.sh](https://roadmap.sh/projects/expense-tracker)
