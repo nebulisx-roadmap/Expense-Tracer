@@ -1,0 +1,33 @@
+{
+  "name": "expense-tracer",
+  "version": "1.0.0-alpha",
+  "description": "A simple expense tracker application to manage your finances.",
+  "main": "index.ts",
+  "bin": "dist/index.js",
+  "scripts": {
+    "bundle": "bun build.ts",
+    "compile": "bun compile:all",
+    "compile:darwin": "bun compile.ts --platform=darwin",
+    "compile:linux": "bun compile.ts --platform=linux",
+    "compile:win32": "bun compile.ts --platform=windows",
+    "compile:darwin-arm64": "bun compile.ts --platform=darwin --arch arm64",
+    "compile:linux-arm64": "bun compile.ts --platform=linux --arch arm64",
+    "compile:win32-arm64": "bun compile.ts --platform=windows --arch arm64",
+    "compile:all": "bun compile.ts --platform=all",
+    "start": "bun dist/index.js",
+    "test": "bun test.ts"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "6.0.1",
+    "commander": "^13.0.0",
+    "prisma": "6.0.1"
+  }
+}
