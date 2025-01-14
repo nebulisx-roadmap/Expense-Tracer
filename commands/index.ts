@@ -4,4 +4,6 @@ import remove from "./remove"
 import update from "./update"
 import summary from "./summary"
 
-export default [add, list, remove, update, summary] as const
+import init from "./init" // TODO: Remove this line after automatically initializing the database
+
+export default [add, list, remove, update, summary, init] as const
