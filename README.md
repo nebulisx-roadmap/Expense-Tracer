@@ -20,46 +20,53 @@ Or you can use our binary files from release page.
 
 ## Usage
 
+You must initialize the database by running the following command:
+
+```bash
+$ expense-tracer init
+# Output: Database initialized successfully
+```
+
 Run the following command to add an expense:
 
 ```bash
-expense-tracer add -description <description> -amount <amount>
-expense-tracer add -description "Groceries" -amount 50
+$ expense-tracer add --description <description> --amount <amount>
+$ expense-tracer add --description "Groceries" --amount 50
 # Output: Expense added successfully: (ID: 1)
 ```
 
 Run the following command to view all expenses:
 
 ```bash
-expense-tracer list
+$ expense-tracer list
 # Output:
 # Expenses:
 # ---------
-# ID\tAmount\tDescription
-# 1\t50\tGroceries
+# ID  Amount  Description
+# 1   50      Groceries
 ```
 
 Run the following command to remove an expense:
 
 ```bash
-expense-tracer remove --id <id>
-expense-tracer remove --id 1
+$ expense-tracer remove --id <id>
+$ expense-tracer remove --id 1
 # Output: Expense removed successfully: (ID: 1)
 ```
 
 Run the following command to update an expense:
 
 ```bash
-expense-tracer update --id <id> --description <description> --amount <amount>
-expense-tracer update --id 1 --description "Groceries" --amount 100
+$ expense-tracer update --id <id> --description <description> --amount <amount>
+$ expense-tracer update --id 1 --description "Groceries" --amount 100
 # Output: Expense updated successfully: (ID: 1)
 ```
 
 Run the following command to summarize expenses:
 
 ```bash
-expense-tracer summary [--month <month>]
-expense-tracer summary --month 1
+$ expense-tracer summary [--month <month>]
+$ expense-tracer summary --month 1
 # Output: Total expenses by month 1: 100
 ```
 <!--
@@ -100,13 +107,13 @@ expense-tracer filter --amount 50
 Run the following command to view help:
 
 ```bash
-expense-tracer help [command]
+$ expense-tracer help [command]
 ```
 
 Run the following command to view version:
 
 ```bash
-expense-tracer --version
+$ expense-tracer --version
 ```
 
 ## Contributing
@@ -119,7 +126,7 @@ MIT License [MIT](LICENSE)
 
 ## Author
 
-[nebulisx](https://github.com/nebulisx-roadmap)
+[nebulisx](https://github.com/nebulisx)
 
 ## Roadmap
 
